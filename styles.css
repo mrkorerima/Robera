@@ -235,3 +235,39 @@ footer {
     align-items: flex-start;
   }
 }
+[data-theme="dark"] body {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #14142a, #2e2e4e);
+}
+
+[data-theme="dark"] nav {
+  background-color: #14142a;
+}
+
+[data-theme="dark"] footer {
+  background-color: #14142a;
+}
+
+[data-theme="dark"] .card {
+  background: #26263c;
+  color: white;
+}
+
+[data-theme="dark"] .contact-form input,
+[data-theme="dark"] .contact-form textarea {
+  background: #1c1c2b;
+  color: white;
+  border: 1px solid #555;
+}
+
+[data-theme="dark"] .contact-form button {
+  background: var(--accent);
+}
+
+[data-theme="dark"] .social-icons a {
+  color: #f97316;
+}
