@@ -85,26 +85,41 @@ nav button {
 
 /* === HERO SECTION === */
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 2rem;
   background: linear-gradient(135deg, #1e1e4d, #3b3b82);
   color: white;
-  padding: 5rem 2rem;
-  text-align: center;
 }
 
-.cta-button {
-  margin-top: 1.5rem;
-  background: var(--accent);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  display: inline-block;
-  transition: background 0.3s ease;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.cta-button:hover {
-  background: #fb8c36;
+.hero-illustration img {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .hero-text {
+    flex: 1;
+  }
+  .hero-illustration {
+    flex: 1;
+    text-align: right;
+  }
 }
 
 /* === SECTIONS === */
@@ -160,6 +175,12 @@ p {
 .card.premium {
   border: 2px solid var(--accent);
 }
+
+.card img {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
 
 /* === CONTACT SECTION === */
 .contact-form {
@@ -274,5 +295,38 @@ footer {
   nav button {
     padding: 0.5rem 0;
     display: inline-block;
+  }
+}
+
+.testimonials-bg {
+  position: relative;
+  background-color: var(--bg-light);
+  overflow: hidden;
+}
+
+.testimonials-bg::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle at center, var(--accent) 0%, transparent 70%);
+  opacity: 0.05;
+  animation: float 10s infinite alternate ease-in-out;
+  z-index: 0;
+}
+
+.testimonials-bg .cards {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  100% {
+    transform: translateY(40px) translateX(30px);
   }
 }
