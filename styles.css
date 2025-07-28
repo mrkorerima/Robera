@@ -241,3 +241,25 @@ footer {
     margin-top: 1rem;
   }
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: flex-end;
+    width: auto;
+    padding: 0;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
+  }
+}
