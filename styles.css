@@ -58,6 +58,7 @@ header.navbar {
   list-style: none;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .navbar a, .navbar button {
@@ -90,11 +91,13 @@ header.navbar {
   gap: 2rem;
   max-width: 1000px;
   margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-illustration img {
-  width: 100%;
-  max-width: 400px;
+.hero-icon i {
+  font-size: 6rem;
+  color: var(--accent);
 }
 
 @media (min-width: 768px) {
@@ -109,7 +112,7 @@ header.navbar {
     flex: 1;
   }
 
-  .hero-illustration {
+  .hero-icon {
     flex: 1;
     text-align: right;
   }
@@ -144,10 +147,11 @@ header.navbar {
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.card img {
-  max-width: 120px;
+.card i {
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
@@ -222,7 +226,7 @@ header.navbar {
   background: #f3731a;
 }
 
-/* Fade-in on scroll */
+/* Fade-in on scroll (optional animation hooks) */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -234,7 +238,7 @@ header.navbar {
   transform: translateY(0);
 }
 
-/* Animated background */
+/* Testimonials animated background */
 .testimonials-bg {
   position: relative;
   background-color: var(--bg-light);
