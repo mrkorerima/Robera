@@ -12,14 +12,19 @@
 <body>
   <!-- Navigation -->
   <nav>
+  <div class="nav-container">
     <div class="logo">Robera</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="toggle-theme" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
-    </ul>
-  </nav>
+    <button id="menu-toggle" aria-label="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+  <ul id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button id="toggle-theme" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+  </ul>
+</nav>
 
   <!-- Hero -->
   <section class="hero">
