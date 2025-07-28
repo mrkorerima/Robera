@@ -243,23 +243,24 @@ footer {
 }
 @media (max-width: 768px) {
   nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
   }
 
   nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: flex-end;
-    width: auto;
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 0.5rem;
   }
 
   nav ul li {
-    flex: 0 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0.3rem 0;
+  }
+
+  .cta-button {
+    margin-top: 1rem;
   }
 }
