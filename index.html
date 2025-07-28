@@ -73,10 +73,10 @@
   <section id="contact" class="section fade-in">
     <h2 data-en="Contact Us" data-am="አግኙን" data-om="Nu qunnamu">Contact Us</h2>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message..." rows="4" required></textarea>
+    <form class="contact-form" action="https://formspree.io/f/YOUR_CODE_HERE" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message..." rows="4" required></textarea>
       <button type="submit">Send</button>
     </form>
 
