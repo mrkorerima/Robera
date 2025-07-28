@@ -126,3 +126,18 @@
   </script>
 </body>
 </html>
+<script>
+  const toggleTheme = document.getElementById("toggle-theme");
+  toggleTheme.addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const nextTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", nextTheme);
+    localStorage.setItem("theme", nextTheme);
+  });
+
+  // Load stored theme
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme) {
+    document.documentElement.setAttribute("data-theme", storedTheme);
+  }
+</script>
